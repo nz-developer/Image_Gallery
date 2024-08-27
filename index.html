@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+<div id="page1">
+    <div id="nav">
+        <div id="logo"><h1><i class="ri-image-line"></i> Image Gallery</h1></div>
+        <div id="menu">
+            <h1 onclick="changeImages('home')">Home</h1>
+            <h1 onclick="changeImages('favourites')">Favourites</h1>
+            <h1 onclick="changeImages('camera')">Camera</h1>
+            <h1 onclick="changeImages('downloaded')">Downloaded</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url('pic (1).jpg');"></div>
+            <div class="item" style="background-image: url('pic (1).jpeg');"></div>
+            <div class="item" style="background-image: url('pic (1).png');"></div>
+            <div class="item" style="background-image: url('pic (2).jpg');"></div>
+            <div class="item" style="background-image: url('pic (3).jpg');"></div>
+            <div class="item" style="background-image: url('pic 7.png');"></div>
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
